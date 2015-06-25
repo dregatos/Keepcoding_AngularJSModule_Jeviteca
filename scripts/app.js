@@ -8,15 +8,23 @@ angular.module("jeviteca", ["ngRoute", "route-segment", "view-segment"]);
 
 angular
     .module("jeviteca")
-    .config(["$routeSegmentProvider","$routeProvider","Settings", function($routeSegmentProvider, $routeProvider, Settings) {
+    .config(["$routeSegmentProvider","$routeProvider","Configuration", function($routeSegmentProvider, $routeProvider, Configuration) {
 
-    $routeSegmentProvider.when(Settings.albumsRoute, "albums");
-    $routeSegmentProvider.when(Settings.bandsRoute, "bands");
-    $routeSegmentProvider.when(Settings.genresRoute, "genres");
+    $routeSegmentProvider.when(Configuration.albumsRoute, "albums");
+    $routeSegmentProvider.when(Configuration.bandsRoute, "bands");
+    $routeSegmentProvider.when(Configuration.genresRoute, "genres");
 
     $routeSegmentProvider.segment("albums", {
         controller: "AlbumsCtrl.js",
-        templateUrl: "views/Albums.html"
+        templateUrl: "views/Albums.html",
+        resolve: {
+            Albums: ["AlbumsProvider", function(AlbumsProvider) {
+                return AlbumsProvider.getAlbums();
+            }]
+        },
+        resolveFailed: {
+            // Do something
+        }
     });
 
     $routeSegmentProvider.segment("bands", {
@@ -30,6 +38,6 @@ angular
     });
 
     $routeProvider.otherwise({
-        redirectTo: Settings.albumsRoute
+        redirectTo: Configuration.albumsRoute
     });
 }]);
