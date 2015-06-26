@@ -1,8 +1,9 @@
 <table class="table table-striped">
     <theader>
         <td> Type </td>
+        <td> Albums </td>
     </theader>
     <tbody>
-    <tr ng-repeat="genre in genres | orderBy: 'name'" genre-row genre="genre"> </tr>
+        <tr ng-repeat="genre in genres | orderBy: 'name'" genre-row genre="genre" on-select="showAlbumDetail(albumId)"> </tr>
     </tbody>
 </table>

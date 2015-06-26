@@ -7,7 +7,13 @@ angular.module("jeviteca").directive("genreRow",function() {
         replace: true,
         templateUrl: "views/GenreRow.html",
         scope: {
-            genre: "="
+            genre: "=",
+            onSelect: "&"
         },
+        link: function(scope) {
+            scope.didSelectAlbum = function(id) {
+                scope.onSelect({ albumId: id});
+            };
+        }
     }
 });

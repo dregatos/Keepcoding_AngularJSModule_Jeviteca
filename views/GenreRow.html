@@ -1,3 +1,8 @@
 <tr>
     <td> {{ ::genre.name }}</td>
+    <td>
+        <li ng-repeat="album in genre.albums | orderBy: 'title'">
+            <a href="" ng-click="didSelectAlbum( album.id )"> {{ ::album.title }} </a>
+        </li>
+    </td>
 </tr>
