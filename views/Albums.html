@@ -1,1 +1,21 @@
-<h4>Álbumes</h4>
+<table class="table table-striped">
+    <theader>
+        <td></td>
+        <td> Name </td>
+        <td> Band </td>
+        <td> Genre </td>
+        <td> Year </td>
+    </theader>
+    <tbody>
+        <tr ng-repeat="album in albums | orderBy: 'title'">
+            <td>
+                <img class="img-rounded" width="70" height="70" ng-src="resources/img/{{::album.image}}">
+            </td>
+            <td> {{ ::album.title }}</td>
+            <td> {{ ::album.band.name }}</td>
+            <td> {{ ::album.genre.name }}</td>
+            <td> {{ ::album.year }}</td>
+        </tr>
+    </tbody>
+</table>
+

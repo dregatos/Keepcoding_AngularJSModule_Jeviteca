@@ -15,7 +15,7 @@ angular
     $routeSegmentProvider.when(Configuration.genresRoute, "genres");
 
     $routeSegmentProvider.segment("albums", {
-        controller: "AlbumsCtrl.js",
+        controller: "AlbumsCtrl",
         templateUrl: "views/Albums.html",
         resolve: {
             Albums: ["AlbumsProvider", function(AlbumsProvider) {
@@ -28,12 +28,12 @@ angular
     });
 
     $routeSegmentProvider.segment("bands", {
-        controller: "BandsCtrl.js",
+        controller: "BandsCtrl",
         templateUrl: "views/Bands.html"
     });
 
     $routeSegmentProvider.segment("genres", {
-        controller: "GenresCtrl.js",
+        controller: "GenresCtrl",
         templateUrl: "views/Genres.html"
     });
 
