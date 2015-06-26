@@ -6,7 +6,7 @@ angular
     .controller("BandsCtrl", ["$scope","Bands", function($scope, Bands) {
         $scope.bands = Bands.data;
 
-        $scope.showBandsDetail = function(id) {
+        $scope.showBandDetail = function(id) {
             console.log("Coming soon");
             debugger;
         }
