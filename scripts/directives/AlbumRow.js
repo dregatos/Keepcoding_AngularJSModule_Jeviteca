@@ -1,7 +1,7 @@
 /**
  * Created by dregatos on 26/06/15.
  */
-angular.module("jeviteca").directive("albumRow",function() {
+angular.module("jeviteca").directive("albumRow",["LocalResources",function(LocalResources) {
     return {
         templateUrl: "views/AlbumRow.html",
         scope: {
@@ -12,6 +12,11 @@ angular.module("jeviteca").directive("albumRow",function() {
             scope.didSelect = function(id) {
                 scope.onSelect({ albumId: id});
             }
+
+            scope.imagePath = function(imageName) {
+                debugger;
+                return LocalResources.pathToImage(imageName);
+            }
         }
     }
-});
+}]);
