@@ -42,7 +42,15 @@ angular
 
     $routeSegmentProvider.segment("genres", {
         controller: "GenresCtrl",
-        templateUrl: "views/Genres.html"
+        templateUrl: "views/Genres.html",
+        resolve: {
+            Genres: ["GenresProvider", function(GenresProvider) {
+                return GenresProvider.getGenres();
+            }]
+        },
+        resolveFailed: {
+            // Do something
+        }
     });
 
     $routeProvider.otherwise({

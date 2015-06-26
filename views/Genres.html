@@ -1,1 +1,8 @@
-<h4>Géneros</h4>
+<table class="table table-striped">
+    <theader>
+        <td> Type </td>
+    </theader>
+    <tbody>
+    <tr ng-repeat="genre in genres | orderBy: 'name'" genre-row genre="genre"> </tr>
+    </tbody>
+</table>
