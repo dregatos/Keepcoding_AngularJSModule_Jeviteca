@@ -1,1 +1,9 @@
-<h4>Bandas</h4>
+<table class="table table-striped">
+    <theader>
+        <td></td>
+        <td> Name </td>
+    </theader>
+    <tbody>
+        <tr ng-repeat="band in bands | orderBy: 'name'" band-row band="band" on-select="showBandDetail(bandId)"> </tr>
+    </tbody>
+</table>

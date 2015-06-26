@@ -2,7 +2,8 @@
 	{
 		"id": 1,
 		"name": "Mastodon",
-		"origin": "Atlanta, Georgia, Estados Unidos",
+	  	"imageUrl": "http://www.metalinjection.net/wp-content/uploads/2009/08/1361_photo.jpg",
+	  	"origin": "Atlanta, Georgia, Estados Unidos",
 		"members": [
 			{
 				"name": "Troy Sanders",
@@ -98,8 +99,10 @@
 	{
 		"id": 2,
 		"name": "Slipknot",
-		"origin": "Des Moines, Iowa, Estados Unidos",
-		"members": [
+	  	"imageUrl": "https://horrorpediadotcom.files.wordpress.com/2013/12/download-full-hd-1080p-1080i-slipknot-masks-image.jpg",
+	  	"origin": "Des Moines, Iowa, Estados Unidos",
+	  	"imageUrl": "",
+	  	"members": [
 			{
 				"name": "#0 Sid Wilson",
 				"instruments": [
@@ -200,7 +203,8 @@
 	{
 		"id": 3,
 		"name": "Stone Sour",
-		"origin": "Des Moines, Iowa, Estados Unidos",
+	  	"imageUrl": "http://www.wikinoticia.com/images2//s3.cucharasonica.com/files/2011/07/Stone+Sour-400x281.jpg",
+	  	"origin": "Des Moines, Iowa, Estados Unidos",
 		"members": [
 			{
 				"name": "Corey Taylor",
@@ -289,7 +293,8 @@
 	{
 		"id": 4,
 		"name": "Lamb of God",
-		"origin": "Richmond, Virginia, Estados Unidos",
+	  	"imageUrl": "http://cureoftheevil.wdfiles.com/local--files/musical-band-lamp-of-god/lamb-of-god.jpg",
+	  	"origin": "Richmond, Virginia, Estados Unidos",
 		"members": [
 			{
 				"name": "Randy Blythe",
@@ -398,7 +403,8 @@
 	{
 		"id": 5,
 		"name": "Fear Factory",
-		"origin": "Los Angeles, California, Estados Unidos",
+	  	"imageUrl": "http://static.tvtropes.org/pmwiki/pub/images/rsz_fear-factory_2288.jpg",
+	  	"origin": "Los Angeles, California, Estados Unidos",
 		"members": [
 			{
 				"name": "Burton C. Bell",
@@ -511,7 +517,8 @@
 	{
 		"id": 6,
 		"name": "Gojira",
-		"origin": "Bayona, Francia",
+	  	"imageUrl": "http://www.heavy-metal.it/wp-content/uploads/2012/04/GOJIRA.jpg",
+	  	"origin": "Bayona, Francia",
 		"members": [
 			{
 				"name": "Joe Duplantier",
@@ -595,7 +602,8 @@
 	{
 		"id": 7,
 		"name": "Septicflesh",
-		"origin": "Atenas, Grecia",
+	  	"imageUrl": "https://meanderingentertainer.files.wordpress.com/2009/03/septicflesh.jpg",
+	  	"origin": "Atenas, Grecia",
 		"members": [
 			{
 				"name": "Sotiris Vayenas",
@@ -719,7 +727,8 @@
 	{
 		"id": 8,
 		"name": "Volbeat",
-		"origin": "Copenhague, Dinamarca",
+	  	"imageUrl": "http://wac.450f.edgecastcdn.net/80450F/loudwire.com/files/2011/08/VolbeatFI.jpg?w=600&h=0&zc=1&s=0&a=t&q=89",
+	  	"origin": "Copenhague, Dinamarca",
 		"members": [
 			{
 				"name": "Michael Poulsen",
@@ -803,7 +812,8 @@
 	{
 		"id": 9,
 		"name": "Baroness",
-		"origin": "Savannah, Georgia, Estados Unidos",
+	  	"imageUrl": "http://www.craveonline.com/images/stories/2011/2012/August/Music/Baroness_Bus_Crash.jpg",
+	  	"origin": "Savannah, Georgia, Estados Unidos",
 		"members": [
 			{
 				"name": "John Baizley",
@@ -868,7 +878,8 @@
 	{
 		"id": 10,
 		"name": "Killer Be Killed",
-		"origin": "Phoenix, Arizona, Estados Unidos",
+	  	"imageUrl": "https://upload.wikimedia.org/wikipedia/en/d/de/Killer_Be_Killed_-_Band_Photo_2014.png",
+	  	"origin": "Phoenix, Arizona, Estados Unidos",
 		"members": [
 			{
 				"name": "Greg Puciato",

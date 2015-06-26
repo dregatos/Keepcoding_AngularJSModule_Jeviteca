@@ -3,6 +3,11 @@
  */
 angular
     .module("jeviteca")
-    .controller("BandsCtrl", ["$scope", function($scope) {
+    .controller("BandsCtrl", ["$scope","Bands", function($scope, Bands) {
+        $scope.bands = Bands.data;
 
+        $scope.showBandsDetail = function(id) {
+            console.log("Coming soon");
+            debugger;
+        }
 }]);

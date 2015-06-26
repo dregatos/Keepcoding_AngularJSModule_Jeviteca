@@ -29,7 +29,15 @@ angular
 
     $routeSegmentProvider.segment("bands", {
         controller: "BandsCtrl",
-        templateUrl: "views/Bands.html"
+        templateUrl: "views/Bands.html",
+        resolve: {
+            Bands: ["BandsProvider", function(BandsProvider) {
+                return BandsProvider.getBands();
+            }]
+        },
+        resolveFailed: {
+            // Do something
+        }
     });
 
     $routeSegmentProvider.segment("genres", {

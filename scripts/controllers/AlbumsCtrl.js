@@ -7,6 +7,7 @@ angular
         $scope.albums = Albums.data;
 
         $scope.showAlbumDetail = function(id) {
+            console.log("Coming soon");
             debugger;
         }
 }]);

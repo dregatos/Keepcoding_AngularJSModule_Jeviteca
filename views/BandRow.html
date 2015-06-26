@@ -1,0 +1,21 @@
+
+<tr>
+    <td>
+        <!--img class="img-rounded" width="70" height="70" ng-src="imagePath( album.image )"-->
+        <img class="img-rounded" width="110" height="70" ng-src="{{ ::band.imageUrl }}">
+    </td>
+
+    <td>
+        <a href="" ng-click="didSelect( band.id )">{{ ::band.name }}</a>
+    </td>
+
+    <td> {{ ::band.origin }}</td>
+
+    <td>
+        <ul>
+            <li ng-repeat="member in band.member"> {{ ::member.name }}</li>
+        </ul>
+    </td>
+
+    <td> {{ ::band.year }}</td>
+</tr>
