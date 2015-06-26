@@ -1,0 +1,10 @@
+<td>
+    <img class="img-rounded" width="70" height="70" ng-src="resources/img/{{::album.image}}">
+</td>
+<td>
+    <a href="" ng-click="didSelect( album.id )">{{ ::album.title}}</a>
+</td>
+
+<td> {{ ::album.band.name }}</td>
+<td> {{ ::album.genre.name }}</td>
+<td> {{ ::album.year }}</td>

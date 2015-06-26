@@ -11,4 +11,8 @@ angular
             var path = "resources/img" + imageName;
             return imageName ? path : null;
         };
+
+        $scope.showAlbumDetail = function(id) {
+            debugger;
+        }
 }]);
