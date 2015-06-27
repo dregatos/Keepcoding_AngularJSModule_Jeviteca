@@ -54,6 +54,6 @@ angular
     });
 
     $routeProvider.otherwise({
-        redirectTo: Configuration.albumsRoute
+        redirectTo: Configuration.genresRoute
     });
 }]);

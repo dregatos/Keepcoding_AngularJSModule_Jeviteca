@@ -9,13 +9,14 @@
         <a href="" ng-click="didSelect( band.id )">{{ ::band.name }}</a>
     </td>
 
-    <td> {{ ::band.origin }}</td>
-
     <td>
         <ul>
-            <li ng-repeat="member in band.member"> {{ ::member.name }}</li>
+            <li ng-repeat="member in band.members"> {{ ::member.name }}, <small>{{ ::member.instruments | bandInstrumentFilter}}</small></li>
         </ul>
     </td>
 
-    <td> {{ ::band.year }}</td>
+    <td> {{ ::band.albums[band.albums.length-1] | lastAlbumFilter }} </td>
+
+    <td> {{ ::band.origin | formedInFilter}}</td>
+
 </tr>

@@ -2,6 +2,10 @@
     <theader>
         <td></td>
         <td> Name </td>
+        <td> Members </td>
+        <td> Latest released album </td>
+        <td> Formed in </td>
+
     </theader>
     <tbody>
         <tr ng-repeat="band in bands | orderBy: 'name'" band-row band="band" on-select="showBandDetail(bandId)"> </tr>

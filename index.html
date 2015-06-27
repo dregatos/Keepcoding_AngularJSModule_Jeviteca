@@ -18,15 +18,18 @@
         </header>
         <nav ng-controller="NavigationCtrl">
             <ul class="nav nav-tabs">
-                <li ng-class="{'active': routeAlbums()}">
-                    <a href="#/albums">Albums</a>
-                </li>
-                <li ng-class="{'active': routeBands()}">
-                    <a href="#/bands">Bands</a>
-                </li>
                 <li ng-class="{'active': routeGenres()}">
                     <a href="#/genres">Genres</a>
                 </li>
+
+                <li ng-class="{'active': routeBands()}">
+                    <a href="#/bands">Bands</a>
+                </li>
+
+                <li ng-class="{'active': routeAlbums()}">
+                    <a href="#/albums">Albums</a>
+                </li>
+
             </ul>
         </nav>
         <section app-view-segment="0"></section>
@@ -51,6 +54,9 @@
     <script src="scripts/directives/AlbumRow.js"></script>
     <script src="scripts/directives/BandRow.js"></script>
     <script src="scripts/directives/GenreRow.js"></script>
+    <script src="scripts/filters/BandInstrumentFilter.js"></script>
+    <script src="scripts/filters/LastAlbumFilter.js"></script>
+    <script src="scripts/filters/FormedInFilter.js"></script>
 
 </body>
 </html>
