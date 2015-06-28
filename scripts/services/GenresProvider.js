@@ -3,8 +3,8 @@
  */
 angular
     .module("jeviteca")
-    .service("GenresProvider", ["$http", "Settings", function ($http, Settings) {
-        this.getGenres = function () {
-            return $http.get(Settings.genresDataPath);
+    .service("GenresProvider", ["$http", function ($http) {
+        this.getGenres = function (filePath) {
+            return $http.get(filePath);
         }
     }]);

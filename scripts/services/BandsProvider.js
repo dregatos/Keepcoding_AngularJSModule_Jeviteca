@@ -3,8 +3,8 @@
  */
 angular
     .module("jeviteca")
-    .service("BandsProvider", ["$http", "Settings", function ($http, Settings) {
-        this.getBands = function () {
-            return $http.get(Settings.bandsDataPath);
+    .service("BandsProvider", ["$http", function ($http) {
+        this.getBands = function (filePath) {
+            return $http.get(filePath);
         }
     }]);

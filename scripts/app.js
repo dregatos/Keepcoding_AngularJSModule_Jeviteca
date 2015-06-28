@@ -18,8 +18,8 @@ angular
         controller: "AlbumsCtrl",
         templateUrl: "views/Albums.html",
         resolve: {
-            Albums: ["AlbumsProvider", function(AlbumsProvider) {
-                return AlbumsProvider.getAlbums();
+            Albums: ["AlbumsProvider", "Settings", function(AlbumsProvider, Settings) {
+                return AlbumsProvider.getAlbums(Settings.albumsDataPath);
             }]
         },
         resolveFailed: {
@@ -31,8 +31,8 @@ angular
         controller: "BandsCtrl",
         templateUrl: "views/Bands.html",
         resolve: {
-            Bands: ["BandsProvider", function(BandsProvider) {
-                return BandsProvider.getBands();
+            Bands: ["BandsProvider", "Settings", function(BandsProvider, Settings) {
+                return BandsProvider.getBands(Settings.bandsDataPath);
             }]
         },
         resolveFailed: {
@@ -44,8 +44,8 @@ angular
         controller: "GenresCtrl",
         templateUrl: "views/Genres.html",
         resolve: {
-            Genres: ["GenresProvider", function(GenresProvider) {
-                return GenresProvider.getGenres();
+            Genres: ["GenresProvider", "Settings", function(GenresProvider, Settings) {
+                return GenresProvider.getGenres(Settings.genresDataPath);
             }]
         },
         resolveFailed: {
