@@ -1,4 +1,7 @@
 <tr>
+    <td>
+        <span favorites type="genre" id="genre.id"></span>
+    </td>
     <td> {{ ::genre.name }}</td>
     <td>
         <li ng-repeat="album in genre.albums | orderBy: 'title'">
