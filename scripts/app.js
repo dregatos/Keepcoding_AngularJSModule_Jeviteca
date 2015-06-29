@@ -14,6 +14,7 @@ angular
     $routeSegmentProvider.when(Configuration.bandsRoute, "bands");
     $routeSegmentProvider.when(Configuration.genresRoute, "genres");
     $routeSegmentProvider.when(Configuration.bandDetailRoute,"bands_detail");
+    $routeSegmentProvider.when(Configuration.albumDetailRoute,"albums_detail");
 
     $routeSegmentProvider.segment("albums", {
         controller: "AlbumsCtrl",
@@ -60,6 +61,19 @@ angular
         resolve: {
             Band: ["BandsProvider", "Settings", "$routeParams", function(BandsProvider, Settings, $routeParams) {
                 return BandsProvider.getBand(Settings.bandsDataPath, $routeParams.id);
+            }]
+        },
+        resolveFailed: {
+            // Do something
+        }
+    });
+
+    $routeSegmentProvider.segment("albums_detail", {
+        controller: "AlbumDetailCtrl",
+        templateUrl: "views/AlbumDetail.html",
+        resolve: {
+            Album: ["AlbumsProvider", "Settings", "$routeParams", function(AlbumsProvider, Settings, $routeParams) {
+                return AlbumsProvider.getAlbum(Settings.albumsDataPath, $routeParams.id);
             }]
         },
         resolveFailed: {

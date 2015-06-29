@@ -5,7 +5,11 @@
     <td> {{ ::genre.name }}</td>
     <td>
         <li ng-repeat="album in genre.albums | orderBy: 'title'">
-            <a href="" ng-click="didSelectAlbum( album.id )"> {{ ::album.title }} </a>
+            <a>
+                <a href="#/albums/detail/{{::album.id}}"> {{ ::album.title }} </a>
+                <small> by </small>
+                <a href="#/bands/detail/{{::album.band.id}}"> {{ ::album.band.name }} </a>
+            </a>
         </li>
     </td>
 </tr>
