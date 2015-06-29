@@ -5,5 +5,6 @@ angular.module("jeviteca").constant("Configuration", {
     // navigations routes
     "albumsRoute": "/albums",
     "bandsRoute": "/bands",
-    "genresRoute": "/genres"
+    "genresRoute": "/genres",
+    "bandDetailRoute": "/bands/detail/:id"
 });

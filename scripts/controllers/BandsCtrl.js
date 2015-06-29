@@ -7,7 +7,6 @@ angular
         $scope.bands = Bands.data;
 
         $scope.showBandDetail = function(id) {
-            console.log("Coming soon");
-            debugger;
+            console.log("Will Show Band Detail with id: " + id);
         }
 }]);
